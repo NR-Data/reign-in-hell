@@ -1,0 +1,1218 @@
+{
+  "gameSystem": {
+    "name": "Reign in Hell",
+    "id": "22f0-18eb-8fd1-99fa",
+    "battleScribeVersion": 2.03,
+    "revision": 10,
+    "type": "gameSystem",
+    "xmlns": "http://www.battlescribe.net/schema/gameSystemSchema",
+    "categoryEntries": [
+      {"name": "Leader", "id": "3436-8e6e-a8f6-716e", "hidden": false},
+      {"name": "Devout", "id": "e534-8b74-6056-9e87", "hidden": false},
+      {"name": "Minion", "id": "0894-68fa-8134-6e32", "hidden": false},
+      {"name": "Game options", "id": "97dc-ef12-50e1-0522", "hidden": false},
+      {"name": "Cabal Philosophy", "id": "37f0-28f2-907e-0230", "hidden": false},
+      {"name": "Lesser Demon", "id": "b93b-d800-9ee4-11fd", "hidden": false},
+      {"name": "Greater Demon", "id": "8bfb-862a-17d4-a3b6", "hidden": false},
+      {"name": "Superior Demon", "id": "102e-4c9e-ca12-0454", "hidden": false},
+      {"name": "Combat Minus One", "id": "314a-df0e-b55d-4554", "hidden": false},
+      {"name": "Life Plus Two", "id": "eb2d-84e6-ea07-eedc", "hidden": false},
+      {"name": "Combat Minus Two", "id": "4204-2b1a-4e10-3498", "hidden": false},
+      {"name": "Life Minus One", "id": "b1d4-e3b5-ca18-b24f", "hidden": false},
+      {"name": "Move Plus One", "id": "f657-5b28-7322-3235", "hidden": false},
+      {"name": "Move Plus Two", "id": "dd6d-e6e5-3efa-68a6", "hidden": false},
+      {"name": "Move Minus One", "id": "f23f-8f5d-4b3a-13c8", "hidden": false},
+      {"name": "Move Minus Two", "id": "ac5d-8240-f950-a068", "hidden": false},
+      {"name": "Combat Plus One", "id": "0248-043c-5933-9c5d", "hidden": false},
+      {"name": "Combat Plus Two", "id": "ad2b-8ccc-627b-208b", "hidden": false},
+      {"name": "Life Minus Two", "id": "aa39-3f43-07c3-7f13", "hidden": false},
+      {"name": "Life Plus One", "id": "3d4f-0267-2d3e-902f", "hidden": false}
+    ],
+    "costTypes": [{"name": "Souls", "id": "cc7c-c1bb-7f20-8378", "defaultCostLimit": -1, "hidden": false}],
+    "forceEntries": [
+      {
+        "name": "One-off",
+        "id": "f8b2-aaaf-5a8a-eb0d",
+        "hidden": false,
+        "categoryLinks": [
+          {
+            "name": "Leader",
+            "id": "688f-bc2d-c5d2-a146",
+            "hidden": false,
+            "primary": false,
+            "targetId": "3436-8e6e-a8f6-716e",
+            "constraints": [
+              {
+                "id": "3a4b-dde6-0930-6386",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "roster",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              },
+              {
+                "id": "da01-bca4-a5bc-a5b4",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "roster",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "name": "Devout",
+            "id": "9b8c-2ae3-1838-f199",
+            "hidden": false,
+            "primary": false,
+            "targetId": "e534-8b74-6056-9e87",
+            "constraints": [
+              {
+                "id": "b9e3-61af-94a6-287f",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "roster",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "7f7f-2803-6b57-fabc",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "roster",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "name": "Minion",
+            "id": "9c09-6a46-1254-93b9",
+            "hidden": false,
+            "primary": false,
+            "targetId": "0894-68fa-8134-6e32",
+            "constraints": [
+              {
+                "id": "7c0f-c3ea-312a-d529",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "roster",
+                "shared": true,
+                "type": "max",
+                "value": 8
+              }
+            ]
+          },
+          {"name": "Game options", "id": "b92d-ac5d-694b-8975", "hidden": false, "primary": false, "targetId": "97dc-ef12-50e1-0522"},
+          {
+            "name": "Cabal Philosophy",
+            "id": "5eab-18c3-774d-3e92",
+            "hidden": false,
+            "primary": false,
+            "targetId": "37f0-28f2-907e-0230",
+            "constraints": [
+              {
+                "id": "0a33-a311-6682-78cd",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "roster",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              },
+              {
+                "id": "10e9-0203-722e-169d",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "roster",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              }
+            ]
+          },
+          {"name": "Lesser Demon", "id": "8ab2-1169-ef43-523b", "hidden": false, "primary": false, "targetId": "b93b-d800-9ee4-11fd"},
+          {"name": "Superior Demon", "id": "5c4c-b2b9-13b4-e0fe", "hidden": false, "primary": false, "targetId": "102e-4c9e-ca12-0454"},
+          {"name": "Greater Demon", "id": "69a2-b484-3f9b-0e34", "hidden": false, "primary": false, "targetId": "8bfb-862a-17d4-a3b6"}
+        ],
+        "constraints": [
+          {
+            "id": "e0bf-2bf4-7f22-e4be",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": false,
+            "type": "max",
+            "value": 10
+          },
+          {
+            "id": "a0e1-919e-8360-ed81",
+            "field": "cc7c-c1bb-7f20-8378",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 0
+          }
+        ],
+        "modifiers": [
+          {
+            "field": "a0e1-919e-8360-ed81",
+            "type": "increment",
+            "value": 100,
+            "conditions": [
+              {
+                "childId": "1307-8aa0-cf5e-72ba",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "97dc-ef12-50e1-0522",
+                "shared": true,
+                "type": "equalTo",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "field": "a0e1-919e-8360-ed81",
+            "type": "increment",
+            "value": 200,
+            "conditions": [
+              {
+                "childId": "03b3-3291-7acc-cd7d",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "97dc-ef12-50e1-0522",
+                "shared": true,
+                "type": "equalTo",
+                "value": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Campaign",
+        "id": "1b53-dd9a-887c-b4a3",
+        "hidden": false,
+        "categoryLinks": [
+          {
+            "name": "Leader",
+            "id": "844d-8f9c-c312-807c",
+            "hidden": false,
+            "primary": false,
+            "targetId": "3436-8e6e-a8f6-716e",
+            "constraints": [
+              {
+                "id": "907e-c1b3-aa2c-e4bf",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "roster",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              },
+              {
+                "id": "2983-060e-bcfd-3b76",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "roster",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "name": "Devout",
+            "id": "7fc2-020b-8e5c-0d20",
+            "hidden": false,
+            "primary": false,
+            "targetId": "e534-8b74-6056-9e87",
+            "constraints": [
+              {
+                "id": "f096-e377-8062-230b",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "roster",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "d151-6bbe-523d-62f0",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "roster",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          },
+          {"name": "Lesser Demon", "id": "5931-bb40-fdf1-4027", "hidden": false, "primary": false, "targetId": "b93b-d800-9ee4-11fd"},
+          {"name": "Greater Demon", "id": "73b1-59c2-6d78-e6c2", "hidden": false, "primary": false, "targetId": "8bfb-862a-17d4-a3b6"},
+          {"name": "Superior Demon", "id": "cfaf-839c-b3d6-a758", "hidden": false, "primary": false, "targetId": "102e-4c9e-ca12-0454"},
+          {
+            "name": "Cabal Philosophy",
+            "id": "719f-f226-04df-e277",
+            "hidden": false,
+            "primary": false,
+            "targetId": "37f0-28f2-907e-0230",
+            "constraints": [
+              {
+                "id": "6e56-486d-729e-1199",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "roster",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              },
+              {
+                "id": "360d-c3fc-f431-b759",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "roster",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              }
+            ]
+          },
+          {"name": "Game options", "id": "6ea9-b5f9-f4a4-3551", "hidden": false, "primary": false, "targetId": "97dc-ef12-50e1-0522"},
+          {
+            "name": "Minion",
+            "id": "959f-e730-1e64-997d",
+            "hidden": false,
+            "primary": false,
+            "targetId": "0894-68fa-8134-6e32",
+            "constraints": [
+              {
+                "id": "8bbc-8b2f-9694-2f8b",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "roster",
+                "shared": true,
+                "type": "max",
+                "value": 8
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "profileTypes": [
+      {
+        "name": "Demon",
+        "id": "b8bf-34dc-6f26-5b03",
+        "characteristicTypes": [{"name": "Move", "id": "ed7a-c503-b270-885d"}, {"name": "Life", "id": "137b-d13e-dda6-0530"}, {"name": "Combat", "id": "b936-d350-1b5b-fb34"}]
+      },
+      {"name": "Fly", "id": "934f-58bf-73e4-4734", "characteristicTypes": [{"name": "Description", "id": "e0df-03f5-483d-9083"}]},
+      {"name": "Cabal Philosophy", "id": "b810-d409-f2f5-d758", "characteristicTypes": [{"name": "Description", "id": "7326-f971-1b11-5a8f"}]},
+      {"name": "Philosophy's leader bonus", "id": "9aa4-6cb5-5a5b-8535", "characteristicTypes": [{"name": "Description", "id": "d89b-48bf-de6e-7ee7"}]},
+      {"name": "Philosophy's special ability", "id": "aa66-8123-2b7b-412f", "characteristicTypes": [{"name": "Description", "id": "f14b-889d-82ba-6eb6"}]},
+      {"name": "Special Ability", "id": "8366-9fc7-d1ad-f62b", "characteristicTypes": [{"name": "Description", "id": "9bf0-bbf8-b277-8619"}]},
+      {"name": "Evolutions", "id": "6ccd-fe51-809b-d201", "characteristicTypes": [{"name": "Description", "id": "49c9-3fde-e2cf-1269"}]},
+      {"name": "Leader Essence", "id": "a678-a0a7-3ad1-49c1", "characteristicTypes": [{"name": "Description", "id": "1ce9-d29c-8132-201d"}]},
+      {"name": "Leader Relic", "id": "b9e7-88a7-7587-d127", "characteristicTypes": [{"name": "Description", "id": "75ad-a539-0c81-ff3d"}]},
+      {"name": "Essence", "id": "e404-1fce-8f54-aff4", "characteristicTypes": [{"name": "Description", "id": "befd-8edc-9ada-e8ae"}]},
+      {"name": "Relic", "id": "30a0-40c7-34d3-acce", "characteristicTypes": [{"name": "Description", "id": "b4e4-c756-c8a9-380f"}]},
+      {"name": "XP Increase", "id": "2803-450f-962f-95f6", "characteristicTypes": [{"name": "Description", "id": "f6ef-2e82-6713-b355"}]},
+      {"name": "Title", "id": "ced4-2b3f-b2cf-8dd2", "characteristicTypes": [{"name": "Description", "id": "a28c-3ad5-7f22-320d"}]},
+      {"name": "Soul Loss Effect", "id": "764b-5bf2-b9b9-3fc9", "characteristicTypes": [{"name": "Description", "id": "814e-7e75-1b23-cf4e"}]}
+    ],
+    "publications": [{"name": "Snarl 2023", "id": "f25-1276-5b70-cf50", "hidden": false}],
+    "sharedProfiles": [
+      {
+        "name": "Fly",
+        "id": "0f98-10c6-6882-0263",
+        "hidden": false,
+        "typeId": "934f-58bf-73e4-4734",
+        "typeName": "Fly",
+        "characteristics": [
+          {
+            "name": "Description",
+            "$text": "Demon ignores vertical distance and area terrain when moving. When the demon ends its move, it will suffer any effect of terrain it lands on. Demons may not land on another model.",
+            "typeId": "e0df-03f5-483d-9083"
+          }
+        ]
+      }
+    ],
+    "sharedSelectionEntries": [
+      {
+        "name": "Game Options",
+        "id": "2fa7-9a08-fba9-f877",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "New CategoryLink", "id": "ebb2-9b25-6e46-fc66", "hidden": false, "primary": true, "targetId": "97dc-ef12-50e1-0522"}],
+        "constraints": [
+          {
+            "id": "eb3f-a291-7e77-3305",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "a071-5d3e-7913-1e53",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "min",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "Souls", "typeId": "cc7c-c1bb-7f20-8378", "value": 0}],
+        "selectionEntries": [
+          {
+            "name": "Soul Ledger",
+            "id": "4217-eed6-08f5-cbd2",
+            "collective": false,
+            "hidden": true,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [
+              {
+                "id": "1ef8-95fd-da74-b097",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": -1
+              }
+            ],
+            "costs": [{"name": "Souls", "typeId": "cc7c-c1bb-7f20-8378", "value": 0}],
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "1b53-dd9a-887c-b4a3",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 0
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Game Type",
+            "id": "cb9e-b137-d959-89e0",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "constraints": [
+              {
+                "id": "1822-7ff7-56db-e773",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              },
+              {
+                "id": "40b4-03f5-1686-0be3",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Learning Game",
+                "id": "1307-8aa0-cf5e-72ba",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "costs": [{"name": "Souls", "typeId": "cc7c-c1bb-7f20-8378", "value": 0}],
+                "modifiers": [
+                  {
+                    "field": "hidden",
+                    "type": "set",
+                    "value": true,
+                    "conditions": [
+                      {
+                        "childId": "1b53-dd9a-887c-b4a3",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "force",
+                        "shared": true,
+                        "type": "instanceOf",
+                        "value": 0
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Standard Game",
+                "id": "03b3-3291-7acc-cd7d",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "costs": [{"name": "Souls", "typeId": "cc7c-c1bb-7f20-8378", "value": 0}],
+                "modifiers": [
+                  {
+                    "field": "hidden",
+                    "type": "set",
+                    "value": true,
+                    "conditions": [
+                      {
+                        "childId": "1b53-dd9a-887c-b4a3",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "force",
+                        "shared": true,
+                        "type": "instanceOf",
+                        "value": 0
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Campaign Game",
+                "id": "517a-7a77-fef0-f5a3",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "costs": [{"name": "Souls", "typeId": "cc7c-c1bb-7f20-8378", "value": 0}]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Soul of Lightning",
+        "id": "3dd9-2cf7-e9da-604f",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "7a55-6f32-1dbc-aa39",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "Souls", "typeId": "cc7c-c1bb-7f20-8378", "value": 0}],
+        "profiles": [
+          {
+            "name": "Soul of Lightning",
+            "id": "6e34-016b-77f5-6597",
+            "hidden": false,
+            "typeId": "a678-a0a7-3ad1-49c1",
+            "typeName": "Leader Essence",
+            "characteristics": [{"name": "Description", "$text": "Increases your Leader’s Move by 1\".", "typeId": "1ce9-d29c-8132-201d"}]
+          }
+        ]
+      },
+      {
+        "name": "Poisoned Soul",
+        "id": "e21b-b8a9-d4b2-6507",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "c20b-bacd-aa9d-147f",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "Souls", "typeId": "cc7c-c1bb-7f20-8378", "value": 0}],
+        "profiles": [
+          {
+            "name": "Poisoned Soul",
+            "id": "2c46-2d13-296e-5efd",
+            "hidden": false,
+            "typeId": "a678-a0a7-3ad1-49c1",
+            "typeName": "Leader Essence",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "When your Leader is making a Combat Defense roll, if they roll any natural 6, the attacker suffers 2 damage.",
+                "typeId": "1ce9-d29c-8132-201d"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Unyielding Essence",
+        "id": "7157-a45c-00c6-4d72",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "9a0a-1c4f-eaf6-869f",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "Souls", "typeId": "cc7c-c1bb-7f20-8378", "value": 0}],
+        "profiles": [
+          {
+            "name": "Unyielding Essence",
+            "id": "89e7-4d6d-605f-0f3b",
+            "hidden": false,
+            "typeId": "a678-a0a7-3ad1-49c1",
+            "typeName": "Leader Essence",
+            "characteristics": [{"name": "Description", "$text": "Increases your Leader’s Life by 2.", "typeId": "1ce9-d29c-8132-201d"}]
+          }
+        ]
+      },
+      {
+        "name": "Eternal Mind",
+        "id": "8bb4-37b3-98a0-d433",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "4929-91d8-c60d-9753",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "Souls", "typeId": "cc7c-c1bb-7f20-8378", "value": 0}],
+        "profiles": [
+          {
+            "name": "Eternal Mind",
+            "id": "dfef-4eb8-cafd-fac4",
+            "hidden": false,
+            "typeId": "a678-a0a7-3ad1-49c1",
+            "typeName": "Leader Essence",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "When you roll your activation dice, you may select one dice and reroll it if your Leader has not been slain.",
+                "typeId": "1ce9-d29c-8132-201d"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Explosive Spirit",
+        "id": "2643-314b-4dd9-b86b",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "aa5f-72ae-26b1-a7c5",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "Souls", "typeId": "cc7c-c1bb-7f20-8378", "value": 0}],
+        "profiles": [
+          {
+            "name": "Explosive Spirit",
+            "id": "c034-7ec5-3fc6-1dd7",
+            "hidden": false,
+            "typeId": "a678-a0a7-3ad1-49c1",
+            "typeName": "Leader Essence",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "When your Leader is slain, you may roll your Combat Dice. Each roll of 4+ deals 1 damage to each demon within 3” of your slain Leader. No Soul Dice is granted when this Leader is slain.",
+                "typeId": "1ce9-d29c-8132-201d"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Mending Soul",
+        "id": "2b66-0c4b-7f97-165f",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "eb0a-c9b8-4378-d6a2",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "Souls", "typeId": "cc7c-c1bb-7f20-8378", "value": 0}],
+        "profiles": [
+          {
+            "name": "Mending Soul",
+            "id": "c656-f9de-f93c-b3a7",
+            "hidden": false,
+            "typeId": "a678-a0a7-3ad1-49c1",
+            "typeName": "Leader Essence",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "When rolling on the Soul Loss table after the battle to determine the fate of your demons, you may reroll one fate roll for your cabal.",
+                "typeId": "1ce9-d29c-8132-201d"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Skirmish Spirit",
+        "id": "ab07-6c22-642c-58f6",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "89ba-a90b-44e4-0d61",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "Souls", "typeId": "cc7c-c1bb-7f20-8378", "value": 0}],
+        "profiles": [
+          {
+            "name": "Skirmish Spirit",
+            "id": "3cef-a1cd-d769-31c7",
+            "hidden": false,
+            "typeId": "a678-a0a7-3ad1-49c1",
+            "typeName": "Leader Essence",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "If your Leader uses Running Skirmish, their Move ability increases by 3\" for that movement.",
+                "typeId": "1ce9-d29c-8132-201d"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Regenerating Soul",
+        "id": "c24b-1975-93c2-1733",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "1570-8fb8-1a27-da95",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "Souls", "typeId": "cc7c-c1bb-7f20-8378", "value": 0}],
+        "profiles": [
+          {
+            "name": "Regenerating Soul",
+            "id": "1ba9-851e-e54d-a8e1",
+            "hidden": false,
+            "typeId": "a678-a0a7-3ad1-49c1",
+            "typeName": "Leader Essence",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "When your Leader activates, they heal 1 Life. This has no effect if your Leader is at maximum Life.",
+                "typeId": "1ce9-d29c-8132-201d"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Steadfast Soul",
+        "id": "a2c3-bb15-6c27-f56d",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "8d56-7030-abdf-4a8c",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "Souls", "typeId": "cc7c-c1bb-7f20-8378", "value": 0}],
+        "profiles": [
+          {
+            "name": "Steadfast Soul",
+            "id": "575a-03e8-d2c0-9af0",
+            "hidden": false,
+            "typeId": "a678-a0a7-3ad1-49c1",
+            "typeName": "Leader Essence",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "When your Leader uses Focused Combat, they may choose to change the result of any one Combat Defense die to a 6.",
+                "typeId": "1ce9-d29c-8132-201d"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Soul Drinker",
+        "id": "8e90-8d0e-7fa0-d359",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "f52a-f211-bc8b-426d",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "Souls", "typeId": "cc7c-c1bb-7f20-8378", "value": 0}],
+        "profiles": [
+          {
+            "name": "Soul Drinker",
+            "id": "0c7c-2718-654c-ae07",
+            "hidden": false,
+            "typeId": "b9e7-88a7-7587-d127",
+            "typeName": "Leader Relic",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "When this demon makes a Combat Attack roll, each natural roll of 6 results in 2 damage instead of 1. If this demon’s attacks slay an enemy demon, the Leader heals 1 damage.",
+                "typeId": "75ad-a539-0c81-ff3d"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Screaming Shield",
+        "id": "133a-1e64-140e-0bea",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "81ee-c4f4-a24d-797a",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "Souls", "typeId": "cc7c-c1bb-7f20-8378", "value": 0}],
+        "profiles": [
+          {
+            "name": "Screaming Shield",
+            "id": "9a36-e6f9-f0f7-1fd1",
+            "hidden": false,
+            "typeId": "b9e7-88a7-7587-d127",
+            "typeName": "Leader Relic",
+            "characteristics": [{"name": "Description", "$text": "This demon may never be hit on anything lower than a 3+ (they may not be hit on 2).", "typeId": "75ad-a539-0c81-ff3d"}]
+          }
+        ]
+      },
+      {
+        "name": "Infernal Armor",
+        "id": "47a5-f8a9-e5c9-c0ad",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "b1ab-e76c-bc89-5f2f",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "Souls", "typeId": "cc7c-c1bb-7f20-8378", "value": 0}],
+        "profiles": [
+          {
+            "name": "Infernal Armor",
+            "id": "629d-1f74-4582-9a4b",
+            "hidden": false,
+            "typeId": "b9e7-88a7-7587-d127",
+            "typeName": "Leader Relic",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "Whenever this demon suffers damage as a result of a Combat Attack, reduce the damage this demon suffers by 1.",
+                "typeId": "75ad-a539-0c81-ff3d"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Hammer of Thunder",
+        "id": "38ac-f94e-9905-ba7d",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "ba7e-31fc-41e0-93d0",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "Souls", "typeId": "cc7c-c1bb-7f20-8378", "value": 0}],
+        "profiles": [
+          {
+            "name": "Hammer of Thunder",
+            "id": "b6b7-dbb1-71bc-eac8",
+            "hidden": false,
+            "typeId": "b9e7-88a7-7587-d127",
+            "typeName": "Leader Relic",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "When this demon makes a Combat Attack roll, if any of the dice result in a natural 6, all enemies within 3” of this demon suffer 2 damage.",
+                "typeId": "75ad-a539-0c81-ff3d"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Axe of Black Blood",
+        "id": "e082-0e72-3461-b378",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "a894-6c15-4d9c-fa41",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "Souls", "typeId": "cc7c-c1bb-7f20-8378", "value": 0}],
+        "profiles": [
+          {
+            "name": "Axe of Black Blood",
+            "id": "43df-f9c8-a10e-7b41",
+            "hidden": false,
+            "typeId": "b9e7-88a7-7587-d127",
+            "typeName": "Leader Relic",
+            "characteristics": [{"name": "Description", "$text": "This demon increases their Combat score by 1 for Combat Attack rolls.", "typeId": "75ad-a539-0c81-ff3d"}]
+          }
+        ]
+      },
+      {
+        "name": "Plate of Rime Ice",
+        "id": "3fa2-950e-4424-e29e",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "9b80-6633-d93e-7d2c",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "Souls", "typeId": "cc7c-c1bb-7f20-8378", "value": 0}],
+        "profiles": [
+          {
+            "name": "Plate of Rime Ice",
+            "id": "8269-2916-31d7-a1ec",
+            "hidden": false,
+            "typeId": "b9e7-88a7-7587-d127",
+            "typeName": "Leader Relic",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "When this demon makes a Combat Defense roll, if any of the dice result in a natural 6, the enemy reduces their Movement score to 0 as long as this demon remains within ½ inch of that model.",
+                "typeId": "75ad-a539-0c81-ff3d"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Token of Luck",
+        "id": "c563-622f-a623-600e",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "0eda-42cb-c5b9-1ad0",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "Souls", "typeId": "cc7c-c1bb-7f20-8378", "value": 0}],
+        "profiles": [
+          {
+            "name": "Token of Luck",
+            "id": "d8d9-0fa6-07c1-30ff",
+            "hidden": false,
+            "typeId": "b9e7-88a7-7587-d127",
+            "typeName": "Leader Relic",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "Once per round, this demon may reroll a single dice. This may not be used for the initiative roll.",
+                "typeId": "75ad-a539-0c81-ff3d"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Necklace of Adaptation",
+        "id": "4c36-5011-f9e7-458d",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "b740-e03e-b72e-7fa9",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "Souls", "typeId": "cc7c-c1bb-7f20-8378", "value": 0}],
+        "profiles": [
+          {
+            "name": "Necklace of Adaptation",
+            "id": "b0b0-e353-89fd-543f",
+            "hidden": false,
+            "typeId": "b9e7-88a7-7587-d127",
+            "typeName": "Leader Relic",
+            "characteristics": [{"name": "Description", "$text": "This demon may roll twice when making a check for any terrain and select either result.", "typeId": "75ad-a539-0c81-ff3d"}]
+          }
+        ]
+      },
+      {
+        "name": "Boots of Leaping",
+        "id": "6265-4bc6-d548-b671",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "7e65-30dc-b4c1-9b16",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "Souls", "typeId": "cc7c-c1bb-7f20-8378", "value": 0}],
+        "profiles": [
+          {
+            "name": "Boots of Leaping",
+            "id": "3eb0-6652-3269-7cc5",
+            "hidden": false,
+            "typeId": "b9e7-88a7-7587-d127",
+            "typeName": "Leader Relic",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "This demon may ignore other demons when moving as though they had Fly. The demon may not end their move on another demon.",
+                "typeId": "75ad-a539-0c81-ff3d"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
